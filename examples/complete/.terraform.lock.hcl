@@ -1,9 +1,9 @@
 # This file is maintained automatically by "terraform init".
 # Manual edits may be lost in future updates.
 
-provider "registry.terraform.io/snowflake-labs/snowflake" {
-  version     = "0.75.0"
-  constraints = "~> 0.75.0"
+provider ""registry.terraform.io/snowflake-labs/snowflake"" {
+  version     = "0.89.0"
+  constraints = "~> 0.89.0"
   hashes = [
     "h1:zCOXLHaFeX/1SvzAiu+RPNSef9JG2Zb+NDsSYyh+MtM=",
     "zh:3857fa574a7fc1766266c48cea60776498f8788bfa7f87a536e0c61f09068ada",
