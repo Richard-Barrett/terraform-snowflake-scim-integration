@@ -1,6 +1,6 @@
 <img align="right" width="60" height="60" src="images/terraform.png">
 
-# tf-snowflake-scim-integration module
+# terraform-snowflake-scim-integration module
 
 This is a repository that makes a `saml+scim` integration based on the ms_azure or okta integrations for Snowflake. The following resources are made depended on what you choose:
 
