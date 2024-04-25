@@ -1,0 +1,20 @@
+---
+name: 'Terraform Docs'
+on:
+  pull_request:
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          token: ${{ secrets.AUTOMATION_PAT }}
+      - name: 'Docs'
+        uses: terraform-docs/gh-actions@v1
+        with:
+          find-dir: terraform/
+          output-file: README.md
+          output-method: inject
+          git-push: "true"
