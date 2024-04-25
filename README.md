@@ -44,7 +44,7 @@ To use the module you will need to use the following:
 module "snowflake_samlscim_usdevelopment" {
   source  = "https://github.com/Richard-Barrett/terraform-snowflake-scim-integration"
   version = "0.0.1"
-  
+
   idp                        = "okta"
   saml2_issuer               = "http://www.okta.com/<OKTA_ENTITY_ID>"
   saml2_sso_url              = "https://<YOURDOMAIN>.okta.com/app/snowflake/<OKTA_ENTITY_ID>/sso/saml"
