@@ -8,7 +8,7 @@ terraform {
   }
 }
 
-provider snowflake {}
+provider "snowflake" {}
 
 module "snowflake_samlscim_canary_okta" {
   source = "../../"
