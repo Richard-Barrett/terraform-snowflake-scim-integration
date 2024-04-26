@@ -8,9 +8,10 @@ terraform {
   }
 }
 
-provider "snowflake" {
-  role = "ACCOUNTADMIN"
-}
+// NOTE: YOU NEED ACCOUNTADMIN ROLE TO RUN THE MODULE
+//provider "snowflake" {
+//  role = "ACCOUNTADMIN"
+//}
 
 data "snowflake_system_generate_scim_access_token" "scim" {
   integration_name = var.idp
