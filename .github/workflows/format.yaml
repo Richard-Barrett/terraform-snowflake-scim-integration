@@ -12,7 +12,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
           token: ${{ secrets.AUTOMATION_PAT }}
       - name: 'Setup'
-        uses: hashicorp/setup-terraform@v3.1.0
+        uses: hashicorp/setup-terraform@v3.1.2
         with:
           terraform_version: 1.1.5
       - name: 'Format'
