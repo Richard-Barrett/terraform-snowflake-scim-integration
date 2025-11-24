@@ -7,7 +7,7 @@ jobs:
     name: Validate Terraform module
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: terraform validate
         uses: dflook/terraform-validate@v1
