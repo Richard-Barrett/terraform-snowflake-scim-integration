@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: 'Tag'
         uses: anothrNick/github-tag-action@1.70.0
         env:
